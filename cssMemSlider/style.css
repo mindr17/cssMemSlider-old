@@ -95,9 +95,17 @@ li {
 }
 .arrows-left {
   transform: translateX(100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-size: 100% 50%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top, left bottom;
 }
 .arrows-right {
   transform: translateX(-100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-size: 100% 50%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left top, right bottom;
 }
 .arrows-left__window,
 .arrows-right__window {
@@ -183,6 +191,7 @@ input {
 #radio4:checked ~ .slider .slider__list { transform: translateX(-75%); }
 
 .text-n-controls {
+  padding-top: 1%;
   display: flex;
   width: 60%;
   justify-content: center;
@@ -212,6 +221,10 @@ input {
   width: 400%;
   display: flex;
   transition: transform 2s ease-in-out;
+}
+
+.slider__item {
+  width: 100%;
 }
 
 .slider__text {
@@ -259,28 +272,18 @@ input {
   border-radius: 100%;
 }
 
+.controls__circle {
+  
+}
+
 #radio1:checked ~ .slider #label1>* { background-color: red; }
 #radio2:checked ~ .slider #label2>* { background-color: red; }
 #radio3:checked ~ .slider #label3>* { background-color: red; }
 #radio4:checked ~ .slider #label4>* { background-color: red; }
 
-.controls>*:focus .controls__visible {
-  background-color: #71A5F1;
-}
-
-.controls>*:hover .controls > * > .controls__visible {
-  background-color: #71A5F1;
-}
-
-.controls>*:hover .controls__visible {
-  background-color: #71A5F1;
-}
-
-.slider__list {
-}
-.slider__item {
-  width: 100%;
-}
-
-.text {
+.main .wrapper .slider div.text-n-controls .controls>*:hover .controls__visible {
+  background-color: #71A5F1!important;
+} 
+.text-n-controls > .controls > *:active {
+  background-color: yellow;
 }
