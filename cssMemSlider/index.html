@@ -9,59 +9,82 @@
 </head>
 <body>
   <main class="main">
+
     <div class="wrapper">
-      <div class="slider">
 
-        
-        <div class="slider__window">
-          
-          
-          <form action="">
-            <div class="controls">
-            </div>
-
-            <input type="radio" id="control1" name="slider" checked="checked">
-            <input type="radio" id="control2" name="slider">
-            <input type="radio" id="control3" name="slider">
-            <input type="radio" id="control4" name="slider">
-
-            <div class="slider__list">
-              <div class="slider__item">
-                <img class="img" src="./img/1.jpg" alt="">
-                <div class="text">
-                  Trailer of a new film is now a MEM!
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="img" src="./img/2.jpg" alt="">
-                <div class="text">
-                  Iron man MEM
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="img" src="./img/3.jpg" alt="">
-                <div class="text">
-                  Tony stark very cool mem
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="img" src="./img/4.jpg" alt="">
-                <div class="text">
-                  Mems rule the world!
-                </div>
-              </div>
-            </div>
-
-          </form>
-
-
-          <!-- <div class="main">
-            <input type="checkbox" class="duck duck1 cb_1"></input>
-            <label class="duck duck1"></label>
-        </div>
-         -->
+      <input type="radio" id="radio1" name="slider" checked="checked">
+      <input type="radio" id="radio2" name="slider">
+      <input type="radio" id="radio3" name="slider">
+      <input type="radio" id="radio4" name="slider">
       
+      <div class="slider">
+        
+        <div class="slider__container">
 
+          <div class="slider-n-arrows">
+            <div class="left">&nbsp&lt;</div>
+            <div class="slider__images-window">
+              <div class="slider__list">
+                <div class="slider__item">
+                  <img class="img" src="./img/1.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                  <img class="img" src="./img/2.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                  <img class="img" src="./img/3.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                  <img class="img" src="./img/4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="right">&gt;&nbsp</div>
+          </div>
+
+          <div class="text-n-controls">
+            <div class="slider__descriptions">
+              <div class="slider__text-list">
+                <div class="slider__text" id="slider__text-1">
+                  <div class="text">
+                    I made a slider!
+                  </div>
+                </div>
+                <div class="slider__text" id="slider__text-2">
+                  <div class="text">
+                    And it works!
+                  </div>
+                </div>
+                <div class="slider__text" id="slider__text-3">
+                  <div class="text">
+                    Very nice slider!
+                  </div>
+                </div>
+                <div class="slider__text" id="slider__text-4">
+                  <div class="text">
+                    Using only HTML and CSS!
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="controls">
+              <label id="label1" for="radio1">
+                <div class="controls__visible"></div>
+              </label>
+              <label id="label2" for="radio2">
+                <div class="controls__visible"></div>
+              </label>
+              <label id="label3" for="radio3">
+                <div class="controls__visible"></div>
+              </label>
+              <label id="label4" for="radio4">
+                <div class="controls__visible"></div>
+              </label>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
